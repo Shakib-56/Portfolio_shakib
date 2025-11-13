@@ -159,7 +159,7 @@ const Contact = () => {
                 className="hover:text-blue-500 transition-colors"
               >
                 <p className="truncate max-w-[220px] sm:max-w-none text-center">
-                  purnadebpaul64@gmail.com
+                  hossenmdshakib47@gmail.com
                 </p>
               </a>
             </motion.div>
@@ -172,7 +172,7 @@ const Contact = () => {
               variants={itemVariants}
             >
               <FaWhatsapp className="text-lg sm:text-xl text-green-500" />
-              <p className="text-center">+8801916041901</p>
+              <p className="text-center">+8801703762940</p>
             </motion.div>
           </motion.div>
         </motion.div>
@@ -181,7 +181,7 @@ const Contact = () => {
 
         <motion.div variants={itemVariants}>
           <p className="text-xs sm:text-sm text-center text-gray-400">
-            © 2025 Purna Deb Paul. All rights reserved.
+            © 2025 Md.Shakib Mia. All rights reserved.
           </p>
         </motion.div>
       </motion.div>

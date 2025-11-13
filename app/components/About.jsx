@@ -43,7 +43,7 @@ const About = () => {
           <Image
             src={assets.user_image}
             alt="user"
-            className="w-full rounded-4xl"
+            className="w-full rounded-2xl"
           />
         </motion.div>
         <motion.div

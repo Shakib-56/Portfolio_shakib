@@ -24,7 +24,7 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="flex items-end gap-2 text-xl md:text-3xl lg:text-xl mb-3 font-Ovo"
       >
-        Hi! I'm Purna Deb Paul
+        Hi! I'm Md.Shakib Mia
         <Image src={assets.hand_icon} alt="" className="w-6" />
       </motion.h3>
       <motion.h1

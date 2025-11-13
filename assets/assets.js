@@ -351,7 +351,7 @@ export const infoList = [
     title: "Expriences",
     institute: "TechyPark Technologies, Inc.",
     description: "Junior Frontend Developer",
-    duration: "2023 ( jan ) - 2025 ( feb )",
+    duration: "2024 ( jan ) - 2025 ( feb )",
   },
 ];
 
@@ -376,19 +376,19 @@ export const toolsData = [
 export const socialLinks = [
   {
     icon: <IoMailUnreadOutline size={18} />,
-    url: "mailto:purnadebpaul64@gmail.com",
+    url: "mailto:hossenmdshakib47@gmail.com",
   },
-  { icon: <FaGithub size={18} />, url: "https://github.com/purnadebpaul64" },
+  { icon: <FaGithub size={18} />, url: "https://github.com/Shakib-56" },
   {
     icon: <FaLinkedinIn size={18} />,
-    url: "https://www.linkedin.com/in/purna-deb-paul-sanju",
+    url: "https://www.linkedin.com/in/shakib-hossen-59773a339/",
   },
   {
     icon: <FaInstagram size={18} />,
-    url: "https://www.instagram.com/purna.deb.paul.sanju/",
+    url: "https://www.instagram.com/sakibhossen5/",
   },
   {
     icon: <FaFacebookF size={18} />,
-    url: "https://www.facebook.com/purna.deb.paul.sanju",
+    url: "https://www.facebook.com/sakib.hossen.9081323/",
   },
 ];
