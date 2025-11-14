@@ -7,24 +7,28 @@ import SocialSidebar from "./SocialSidebar";
 const Navbar = () => {
   const [isScroll, setIsScroll] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const openMenu = () => setIsMenuOpen(true);
   const closeMenu = () => setIsMenuOpen(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (scrollY > 50) {
-        setIsScroll(true);
-      } else {
-        setIsScroll(false);
-      }
-    });
-  });
+    const handleScroll = () => {
+      if (window.scrollY > 50) setIsScroll(true);
+      else setIsScroll(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-60%]">
         <Image src={assets.header_bg_color} alt="" className="w-full h-full" />
       </div>
-      <SocialSidebar></SocialSidebar>
+
+      <SocialSidebar />
+
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
           isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""
@@ -37,6 +41,7 @@ const Navbar = () => {
             className="w-36 md:w-56 cursor-pointer"
           />
         </a>
+
         <ul
           className={`hidden lg:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
             isScroll ? "" : "bg-white/70 shadow-sm"
@@ -102,6 +107,8 @@ const Navbar = () => {
               className="w-5 cursor-pointer"
             />
           </div>
+
+          {/* links */}
           <li>
             <a className="font-Ovo" href="#top" onClick={closeMenu}>
               Home
@@ -127,6 +134,8 @@ const Navbar = () => {
               Contact me
             </a>
           </li>
+
+          {/* social icons */}
           <div className="flex gap-2 px-3 py-2 border border-gray-600 rounded-full justify-center">
             {socialLinks.map((social, index) => (
               <a

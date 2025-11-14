@@ -155,7 +155,7 @@ const Contact = () => {
             >
               <MdAlternateEmail className="text-lg sm:text-xl" />
               <a
-                href="mailto:purnadebpaul64@gmail.com"
+                href="mailto:hossenmdshakib47@gmail.com"
                 className="hover:text-blue-500 transition-colors"
               >
                 <p className="truncate max-w-[220px] sm:max-w-none text-center">
