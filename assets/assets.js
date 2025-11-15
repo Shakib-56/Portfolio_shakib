@@ -42,6 +42,7 @@ import ui_icon from "./ui-icon.png";
 import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
+import js from "./js-icon-1.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import cascade from "./cascade.jpg";
@@ -50,6 +51,9 @@ import glowmart from "./glowmart.jpg";
 import leafLog from "./leaflog.png";
 import onePause from "./onepause.png";
 import funnelHacker from "./funnelhacker.png";
+import nayeemSquad from "./nayeemSquad.png";
+import paybills from "./paybils.png";
+import englishJanala from "./english-janala.png";
 
 import {
   FaFacebookF,
@@ -66,6 +70,9 @@ export const assets = {
   onePause,
   funnelHacker,
   user_image,
+  nayeemSquad,
+  paybills,
+  englishJanala,
   code_icon,
   code_icon_dark,
   edu_icon,
@@ -90,6 +97,7 @@ export const assets = {
   right_arrow_white,
   logo,
   mail_icon,
+  js,
   mail_icon_dark,
   profile_img,
   download_icon,
@@ -118,20 +126,20 @@ export const workData = [
     title: "Fit Tracker",
     subTitle: "Full-Stack Fitness Tracking Platform",
     techStack: [
-      react,
-      nodejs,
-      express,
-      mongodb,
-      firebase,
-      jwt,
-      tailwind,
-      framer,
+      assets.react,
+      assets.nodejs,
+      assets.express,
+      assets.mongodb,
+      assets.firebase,
+      assets.jwt,
+      assets.tailwind,
+      assets.framer,
     ],
     image: assets.fitTracker,
     liveLink: "https://fit-tracker-2d229.web.app/",
     github: "https://github.com/purnadebpaul64/fit-tracker-client",
     description:
-      "FitTracker is a full-stack fitness tracking and booking platform built with MERN Stack and Firebase Authentication, enabling secure role-based access for Members, Trainers, and Admins. Users can book personal training slots, join classes, apply to become trainers, make Stripe payments, and engage with the community forum. Admins get powerful analytics dashboards, trainer management tools, and transaction tracking. The platform features a responsive UI with Material Tailwind, Framer Motion animations, and modern UX.",
+      "FitTracker is a full-stack fitness tracking and booking platform built with MERN Stack and Firebase Authentication, enabling secure role-based access for Members, Trainers, and Admins...",
     keyHighlights: [
       "🔐 Firebase Auth + JWT-secured routes",
       "📅 Trainer booking & application system",
@@ -159,20 +167,20 @@ export const workData = [
     title: "CascadeBlogs",
     subTitle: "Full-Stack Blogging Platform",
     techStack: [
-      react,
-      nodejs,
-      express,
-      mongodb,
-      firebase,
-      jwt,
-      tailwind,
-      framer,
+      assets.react,
+      assets.nodejs,
+      assets.express,
+      assets.mongodb,
+      assets.firebase,
+      assets.jwt,
+      assets.tailwind,
+      assets.framer,
     ],
     image: assets.cascade,
     liveLink: "https://cascadeblog-63b21.web.app/",
     github: "https://github.com/purnadebpaul64/cascade-blog-client",
     description:
-      "CascadeBlog is a modern, responsive, and feature-rich blogging platform built with the MERN stack and Firebase. It provides a seamless experience for blog readers and creators, offering authentication, wishlist, featured content, and dynamic filtering. Designed for individuals who want to share, explore, and interact with blog content across various categories, it supports commenting, wishlisting, blog management, and more. Developed as part of an assignment challenge focused on real-world frontend and full-stack practices.",
+      "CascadeBlog is a modern, responsive, and feature-rich blogging platform built with the MERN stack and Firebase...",
     keyHighlights: [
       "🔐 Firebase Auth (Email + Google login) with JWT-secured routes",
       "📝 Blog creation, management, and commenting system",
@@ -199,13 +207,81 @@ export const workData = [
     ],
   },
   {
+    title: "Pay Bills BD",
+    subTitle: "Online Bill Payment Platform",
+    techStack: [
+      assets.react,
+      assets.firebase,
+      assets.tailwind,
+      assets.nodejs,
+      assets.express,
+    ],
+    image: assets.paybills, // Add a screenshot of your website here
+    liveLink: "https://pay-billsbd.web.app/",
+    github: "",
+    description:
+      "Pay Bills BD is a secure and user-friendly online platform that allows users to pay their utility bills including electricity, gas, water, and internet. Built with React and Firebase, the platform ensures fast, reliable, and responsive experiences across all devices.",
+    keyHighlights: [
+      "💳 Pay multiple utility bills in one place",
+      "🔐 Secure user authentication using Firebase Auth",
+      "📱 Fully responsive design for mobile, tablet, and desktop",
+      "⚡ Fast and modern UI built with TailwindCSS",
+      "🧾 Transaction history and payment confirmations",
+      "🎨 Smooth animations with Framer Motion for better UX",
+    ],
+    challengesFaced: [
+      "Integrating real-time payment status and confirmations",
+      "Securing sensitive user data while maintaining smooth UX",
+      "Ensuring reliable Firebase backend and API connectivity",
+      "Designing a responsive UI for multiple devices",
+      "Implementing dynamic form validation for various billers",
+    ],
+    futurePlans: [
+      "Add support for more billers and service providers",
+      "Introduce a mobile app version for iOS and Android",
+      "Enable push notifications for due bills and payments",
+      "Integrate AI-based bill reminders and suggestions",
+      "Add multilingual support for wider accessibility",
+    ],
+  },
+  {
+    title: "English Janala",
+    subTitle: "Interactive English Learning Website",
+    techStack: [assets.js, assets.tailwind],
+    image: assets.englishJanala, // Add screenshot to assets
+    liveLink: "https://sakib-english-janala.netlify.app/",
+    github: "https://github.com/Shakib-56/English_janala_web", 
+    description:
+      "English Janala is a simple, clean, and fast English learning website built using Vanilla JavaScript and Tailwind CSS. It focuses on helping beginners practice basic English words, phrases, and grammar through an easy-to-use interface.",
+    keyHighlights: [
+      "📚 Simple English learning content for beginners",
+      "⚡ Built with pure JavaScript (no frameworks)",
+      "🎨 Fully responsive UI using TailwindCSS",
+      "💡 Fast load time and lightweight design",
+      "📱 Mobile-first layout for all devices",
+    ],
+    challengesFaced: [
+      "Creating dynamic content interactions using only Vanilla JS",
+      "Structuring a clean UI without using any JS frameworks",
+      "Building fully responsive pages using Tailwind utilities",
+      "Maintaining smooth performance with pure JavaScript",
+    ],
+    futurePlans: [
+      "Add audio pronunciation for words",
+      "Add quizzes and interactive exercises",
+      "Implement progress tracking using Local Storage",
+      "Add more vocabulary categories and lessons",
+      "Include dark mode support",
+    ],
+  },
+  {
     title: "Glow Mart",
     subTitle: "Cosmetics eCommerce Website",
-    techStack: [wp, woo],
+    techStack: [assets.wp, assets.woo],
     image: assets.glowmart,
     liveLink: "https://glowmartpoint.com/",
     description:
-      "Glow Mart is a modern and visually appealing cosmetics eCommerce website built for a real client using WordPress. Leveraging WPBakery Page Builder for custom layouts and WooCommerce for seamless online shopping, it showcases beauty products with elegance and functionality. Designed for an optimal user experience, it offers secure checkout, easy product management, and a responsive design for all devices.",
+      "Glow Mart is a modern and visually appealing cosmetics eCommerce website built for a real client using WordPress...",
     keyHighlights: [
       "🛒 WooCommerce-powered store with secure checkout",
       "🎨 Custom layouts and styling using WPBakery Page Builder",
@@ -233,13 +309,20 @@ export const workData = [
   },
   {
     title: "LeafLog",
-    subTitle: "track and manage care tasks for plants",
-    techStack: [react, firebase, tailwind, express, mongodb, nodejs],
+    subTitle: "Track and manage care tasks for plants",
+    techStack: [
+      assets.react,
+      assets.firebase,
+      assets.tailwind,
+      assets.express,
+      assets.mongodb,
+      assets.nodejs,
+    ],
     image: assets.leafLog,
     liveLink: "https://leaflog-57c1e.web.app/",
     github: "https://github.com/purnadebpaul64/leaflog-client",
     description:
-      "Plant Care Tracker is a mobile-responsive full-stack application designed to help users track and manage care tasks for their indoor and outdoor plants. Users can log watering, fertilizing, check plant health status, and receive reminders — all from a personalized dashboard. With a clean and themed UI, the app ensures an enjoyable and efficient plant care experience.",
+      "Plant Care Tracker is a mobile-responsive full-stack application designed to help users track and manage care tasks for their indoor and outdoor plants...",
     keyHighlights: [
       "🔐 Firebase Auth (Login/Register) with protected routes",
       "🌱 Personal plant dashboard for tracking all plants",
@@ -269,11 +352,11 @@ export const workData = [
   {
     title: "One Pause Solution",
     subTitle: "Watch eCommerce Website",
-    techStack: [wp, woo],
+    techStack: [assets.wp, assets.woo],
     image: assets.onePause,
     liveLink: "https://onepausesolution.com/",
     description:
-      "One Pause Solution is a sleek and modern watch eCommerce website built for a real client. Designed to showcase premium timepieces, it delivers a seamless online shopping experience with a visually appealing interface, secure checkout, and intuitive navigation. The site is optimized for both desktop and mobile users, ensuring accessibility and performance across devices.",
+      "One Pause Solution is a sleek and modern watch eCommerce website built for a real client...",
     keyHighlights: [
       "🛒 WooCommerce-powered store with secure checkout",
       "🎨 Custom design tailored for a luxury watch brand",
@@ -301,9 +384,42 @@ export const workData = [
   {
     title: "Funnel Hacker HQ",
     subTitle: "Funnel Building Website",
-    techStack: [wp, woo],
+    techStack: [assets.wp, assets.woo],
     image: assets.funnelHacker,
     liveLink: "https://funnelhackerhq.com/",
+  },
+  {
+    title: "Nayeem Squad",
+    subTitle: "Electronics & Lifestyle eCommerce Website",
+    techStack: [assets.wp, assets.woo],
+    image: assets.nayeemSquad,
+    liveLink: "https://dev-nayeemsquad.pantheonsite.io/",
+    description:
+      "Nayeem Squad is a dynamic eCommerce website built for electronics, home appliances, and lifestyle products using WordPress and WooCommerce...",
+    keyHighlights: [
+      "🛒 WooCommerce-powered store with secure checkout",
+      "🎨 Custom product pages and category layouts",
+      "📦 Product catalog with categories, tags, and filtering options",
+      "💳 Multiple payment gateway integration",
+      "📱 Fully responsive and mobile-friendly design",
+      "⭐ Display of discounted pricing and promotions",
+      "🤝 Designed as a client project with tailored requirements",
+    ],
+    challengesFaced: [
+      "Customizing WooCommerce product pages for various categories",
+      "Ensuring smooth navigation and responsive design across devices",
+      "Optimizing site speed with caching and image compression",
+      "Integrating multiple payment options and testing transactions",
+      "Organizing a large catalog with filtering and sorting options",
+      "Maintaining consistent branding and user-friendly UX",
+    ],
+    futurePlans: [
+      "Implement AI-based product recommendations",
+      "Add customer loyalty and rewards programs",
+      "Integrate local payment options like bKash & Nagad",
+      "Launch a mobile app for easier shopping",
+      "Add real customer reviews and testimonials for trust",
+    ],
   },
 ];
 
