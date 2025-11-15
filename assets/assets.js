@@ -43,6 +43,8 @@ import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import js from "./js-icon-1.png";
+import html from "./html-icon.png";
+import css from "./css-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import cascade from "./cascade.jpg";
@@ -54,6 +56,7 @@ import funnelHacker from "./funnelhacker.png";
 import nayeemSquad from "./nayeemSquad.png";
 import paybills from "./paybils.png";
 import englishJanala from "./english-janala.png";
+import tarragon from "./tarragon.png";
 
 import {
   FaFacebookF,
@@ -73,6 +76,7 @@ export const assets = {
   nayeemSquad,
   paybills,
   englishJanala,
+  tarragon,
   code_icon,
   code_icon_dark,
   edu_icon,
@@ -106,6 +110,8 @@ export const assets = {
   moon_icon,
   sun_icon,
   arrow_icon,
+  html,
+  css,
   arrow_icon_dark,
   menu_black,
   menu_white,
@@ -250,7 +256,7 @@ export const workData = [
     techStack: [assets.js, assets.tailwind],
     image: assets.englishJanala, // Add screenshot to assets
     liveLink: "https://sakib-english-janala.netlify.app/",
-    github: "https://github.com/Shakib-56/English_janala_web", 
+    github: "https://github.com/Shakib-56/English_janala_web",
     description:
       "English Janala is a simple, clean, and fast English learning website built using Vanilla JavaScript and Tailwind CSS. It focuses on helping beginners practice basic English words, phrases, and grammar through an easy-to-use interface.",
     keyHighlights: [
@@ -272,6 +278,32 @@ export const workData = [
       "Implement progress tracking using Local Storage",
       "Add more vocabulary categories and lessons",
       "Include dark mode support",
+    ],
+  },
+  {
+    title: "Tarragon",
+    subTitle: "Static product landing (HTML & CSS)",
+    techStack: [assets.html, assets.css],
+    image: assets.tarragon,
+    liveLink: "https://shakib-56.github.io/Tarragon-by-css/",
+    github: "https://github.com/Shakib-56/Tarragon-by-css",
+    description:
+      "Tarragon is a simple and elegant product landing page showcasing fresh fruit products. Created with semantic HTML and responsive CSS, it focuses on product photography and conversion-friendly layout.",
+    keyHighlights: [
+      "📸 Clean product-oriented hero and imagery",
+      "📱 Mobile-first responsive layout",
+      "⚡ Lightweight, static GitHub Pages deployment",
+      "🧾 Contact info and footer with company details",
+    ],
+    challengesFaced: [
+      "Creating an attractive hero using only HTML/CSS",
+      "Ensuring consistent layout across devices",
+      "Optimizing images for fast page loads",
+    ],
+    futurePlans: [
+      "Add a small cart/checkout demo",
+      "Add CSS-driven micro-interactions",
+      "Add structured data for better SEO",
     ],
   },
   {
