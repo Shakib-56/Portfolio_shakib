@@ -57,7 +57,7 @@ import nayeemSquad from "./nayeemSquad.png";
 import paybills from "./paybils.png";
 import englishJanala from "./english-janala.png";
 import tarragon from "./tarragon.png";
-
+import roomhatch from "./Roomhatch.webp";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -70,6 +70,7 @@ export const assets = {
   fitTracker,
   glowmart,
   leafLog,
+  roomhatch,
   onePause,
   funnelHacker,
   user_image,
@@ -129,46 +130,61 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Fit Tracker",
-    subTitle: "Full-Stack Fitness Tracking Platform",
+    title: "RoomHatch",
+    subTitle: "MERN-Based Roommate & Room Listing Platform",
     techStack: [
       assets.react,
       assets.nodejs,
       assets.express,
       assets.mongodb,
-      assets.firebase,
-      assets.jwt,
       assets.tailwind,
-      assets.framer,
+      assets.firebase, // used only for auth
     ],
-    image: assets.fitTracker,
-    liveLink: "https://fit-tracker-2d229.web.app/",
-    github: "https://github.com/purnadebpaul64/fit-tracker-client",
+    image: assets.roomhatch,
+    liveLink: "https://roomhatch-auth.web.app/",
+    github: "https://github.com/Shakib-56/roomHatch-client",
     description:
-      "FitTracker is a full-stack fitness tracking and booking platform built with MERN Stack and Firebase Authentication, enabling secure role-based access for Members, Trainers, and Admins...",
+      "RoomHatch is a full-stack MERN platform that helps users find roommates and available rooms. The frontend is built using React and Tailwind CSS, authentication is handled through Firebase, and the backend uses Node.js, Express.js, and MongoDB to manage listings, user data, and protected APIs.",
     keyHighlights: [
-      "🔐 Firebase Auth + JWT-secured routes",
-      "📅 Trainer booking & application system",
-      "💳 Stripe payment integration",
-      "📊 Role-based dashboards & analytics",
-      "🧾 Classes, reviews, and community forum",
-      "📱 Fully responsive modern design",
+      "🔐 Firebase Authentication integrated with MERN stack",
+      "🏠 Roommate & room listing with real-time data from MongoDB",
+      "🛏️ Full CRUD: users can add, update, delete, and view listings",
+      "🔍 Advanced filtering & search for roommate/room posts",
+      "📊 Protected dashboard with user-specific listings",
+      "🌐 Client hosted on Firebase, server deployed on Vercel",
+      "🔄 RESTful API integration with secure routing",
+      "📱 Fully responsive UI using Tailwind CSS",
     ],
+    backendDescription: `
+    The backend server is built using Node.js and Express.js, with MongoDB as the
+    database for storing roommate listings and user data. It exposes RESTful API
+    endpoints that the frontend consumes for:
+    - User authentication and authorization sync with Firebase tokens
+    - Creating, reading, updating, and deleting roommate listings
+    - Filtering and searching roommate posts
+    - Securing user-specific data with protected routes
+  
+    The backend is designed with scalability and security in mind, using proper
+    validation, middleware, and error handling to ensure a stable and safe user
+    experience.
+  `,
     challengesFaced: [
-      "Synchronizing Firebase Authentication with custom JWT token validation for secure API access",
-      "Implementing role-based dashboards with completely separate UI/UX for Admin, Trainer, and Member",
-      "Managing Stripe payment flow for variable pricing plans and dynamic slot booking",
-      "Optimizing database queries in MongoDB without Mongoose while maintaining performance",
-      "Ensuring smooth state management and data fetching using React Query",
+      "Synchronizing Firebase authentication tokens with backend authorization",
+      "Designing scalable MongoDB schemas for listings and user data",
+      "Implementing secure protected routes on both frontend & backend",
+      "Building efficient filtering & search functionality for listings",
+      "Ensuring full responsiveness and smooth UX on all devices",
     ],
     futurePlans: [
-      "Add real-time chat between trainers and members",
-      "Integrate AI-based fitness recommendations and personalized workout plans",
-      "Introduce a mobile app version for iOS and Android",
-      "Enable video streaming for live virtual classes",
-      "Expand the analytics dashboard with more granular user engagement data",
+      "Add full admin panel for listing moderation & user management",
+      "Integrate payment gateway for booking or premium listings",
+      "Add real-time chat between potential roommates",
+      "Implement image uploads using Cloudinary",
+      "Introduce advanced map-based search and location filtering",
+      "Create analytics dashboard for user activity and listing performance",
     ],
   },
+
   {
     title: "CascadeBlogs",
     subTitle: "Full-Stack Blogging Platform",
