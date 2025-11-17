@@ -58,6 +58,7 @@ import paybills from "./paybils.png";
 import englishJanala from "./english-janala.png";
 import tarragon from "./tarragon.png";
 import roomhatch from "./Roomhatch.webp";
+import LawBD from "./Law_BD_react_projects.webp";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -71,6 +72,7 @@ export const assets = {
   glowmart,
   leafLog,
   roomhatch,
+  LawBD,
   onePause,
   funnelHacker,
   user_image,
@@ -186,46 +188,33 @@ export const workData = [
   },
 
   {
-    title: "CascadeBlogs",
-    subTitle: "Full-Stack Blogging Platform",
-    techStack: [
-      assets.react,
-      assets.nodejs,
-      assets.express,
-      assets.mongodb,
-      assets.firebase,
-      assets.jwt,
-      assets.tailwind,
-      assets.framer,
-    ],
-    image: assets.cascade,
-    liveLink: "https://cascadeblog-63b21.web.app/",
-    github: "https://github.com/purnadebpaul64/cascade-blog-client",
+    title: "Law BD",
+    subTitle: "Professional Law Firm Website",
+    techStack: [assets.react, assets.tailwind, assets.js],
+    image: assets.LawBD,
+    liveLink: "https://ph-law-bd.netlify.app/",
+    github: "", // add GitHub repo if you have
     description:
-      "CascadeBlog is a modern, responsive, and feature-rich blogging platform built with the MERN stack and Firebase...",
+      "PH Law BD is a clean, modern website for a law firm, built with a focus on professionalism and trust. The design emphasizes clarity, easy navigation, and a responsive layout to help potential clients find relevant legal services quickly.",
     keyHighlights: [
-      "🔐 Firebase Auth (Email + Google login) with JWT-secured routes",
-      "📝 Blog creation, management, and commenting system",
-      "❤️ Wishlist feature for saving favorite blogs",
-      "🌟 Featured content display on the homepage",
-      "⚡ Dynamic filtering and category-based browsing",
-      "🎨 Modern responsive UI with TailwindCSS & animations",
+      "✅ Professionally styled homepage and service pages",
+      "📱 Responsive and mobile-friendly layout",
+      "🎯 Clear calls to action for consultation and contact",
+      "🔒 Trust-building design with clean color scheme and clear contact info",
+      "⚡ Fast loading times and optimized visuals",
     ],
     challengesFaced: [
-      "Integrating and configuring a rich-text editor for blog creation",
-      "Designing and implementing a clean dashboard where users can add, view, update, and delete blogs",
-      "Building a dynamic filtering system for multiple categories",
-      "Implementing wishlist functionality with seamless sync between client and server",
-      "Ensuring smooth animations and scroll-based effects without performance issues",
-      "Securing routes and APIs with Firebase Auth and JWT",
+      "Designing a site that feels trustworthy and authoritative",
+      "Balancing legal professionalism with modern web aesthetics",
+      "Making the navigation intuitive and client-focused",
+      "Optimizing images and content for performance",
     ],
     futurePlans: [
-      "Implement AI-powered blog writing assistance",
-      "Add a blog recommendation system based on user reading history",
-      "Enable image uploads within the rich-text editor",
-      "Integrate a blog analytics dashboard for creators",
-      "Add social sharing features for blog posts",
-      "Develop a mobile app version for wider accessibility",
+      "Add attorney profile pages with bios and credentials",
+      "Include a testimonial section from real or mock clients",
+      "Integrate a secure contact form for booking free consultations",
+      "Implement structured data for Enhanced SEO and local trust",
+      "Add a blog or resource section to improve inbound client flow",
     ],
   },
   {
@@ -355,48 +344,7 @@ export const workData = [
       "Launch a dedicated mobile app for shopping",
     ],
   },
-  {
-    title: "LeafLog",
-    subTitle: "Track and manage care tasks for plants",
-    techStack: [
-      assets.react,
-      assets.firebase,
-      assets.tailwind,
-      assets.express,
-      assets.mongodb,
-      assets.nodejs,
-    ],
-    image: assets.leafLog,
-    liveLink: "https://leaflog-57c1e.web.app/",
-    github: "https://github.com/purnadebpaul64/leaflog-client",
-    description:
-      "Plant Care Tracker is a mobile-responsive full-stack application designed to help users track and manage care tasks for their indoor and outdoor plants...",
-    keyHighlights: [
-      "🔐 Firebase Auth (Login/Register) with protected routes",
-      "🌱 Personal plant dashboard for tracking all plants",
-      "💧 Log watering, fertilizing, and health checks",
-      "🗓️ Task reminders to maintain plant health",
-      "✏️ Add, update, and delete plants",
-      "📱 Fully responsive design (mobile, tablet, desktop)",
-      "🎨 Themed UI with Tailwind CSS & DaisyUI",
-      "💬 Alerts & tooltips using SweetAlert2",
-      "🎞️ Smooth UX animations with Lottie",
-    ],
-    challengesFaced: [
-      "Designing a clean and intuitive plant dashboard that works seamlessly on mobile and desktop",
-      "Implementing a reliable reminder system for care tasks",
-      "Ensuring smooth animations without affecting performance",
-      "Securing user-specific data with Firebase Authentication",
-      "Managing persistent sessions for logged-in users",
-    ],
-    futurePlans: [
-      "Add AI-based plant care suggestions based on plant type and condition",
-      "Implement push notifications for watering and fertilizing reminders",
-      "Enable image uploads for plant profiles",
-      "Introduce plant community features for sharing tips",
-      "Add a calendar view for tracking plant care history",
-    ],
-  },
+
   {
     title: "One Pause Solution",
     subTitle: "Watch eCommerce Website",
